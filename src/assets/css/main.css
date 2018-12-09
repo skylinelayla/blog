@@ -3,78 +3,61 @@ body {
     /* padding: 0 100px; */
     margin: 0;
     padding: 0;
-    background: #eee;
+    background: #fff;
+    font: 13px Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
 }
-
-.header {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 300px;
-    border-bottom: 1px solid #ddd;
-    background: url(../images/bg.jpg) no-repeat;
-    background-size: cover;
-}
-.header-title {
+.content-wrapper {
     position: absolute;
-    top: 50%;
-    width: 100%;
-    color: #fff;
-    font-size: 40px;
-    line-height: 40px;
-    text-align: center;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    z-index: -1;
 }
-.header-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: #fff;
-    padding: 10px 20px;
+.content > h1 {
+    font-size: 14px;
+    font-weight: normal;
 }
-.header-item {
-    display: inline;
-    margin-left: 10px;
+nav {
+    margin-top: 20px;
+}
+a { 
+    color: #22BAD9;
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    text-decoration: none;
+
 }
-.header-item:hover {
-    color: #797979;
+nav > a {
+    display: inline-block;
+    margin: 0px 15px;
+}
+a:hover {
+    color: #fff;
+    background: #22BAD9;
+    -webkit-text-decoration: none;
+    text-decoration: none;
 }
 .content {
-    max-width: 1220px;
-    margin: 20px auto;
-    padding: 0 20px;
+    text-align: center;
+    flex: 0 0 auto;
 }
 
-.sidebar {
-    display: inline;
-    float: left;
-    width: 23.333333333333332%;
-    margin: 0 0.833333333333333%;
+.post {
+    margin-bottom: 10px;
 }
 .main {
-    display: inline;
-    float: left;
-    width: 73.33333333333333%;
-    margin: 0 0.833333333333333%;
+    padding: 50px 50px;
 }
-.article {
-    background: #fff;
-    -webkit-box-shadow: 1px 2px 3px #ddd;
-    box-shadow: 1px 2px 3px #ddd;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-}
-.widget-wrap {
-    margin: 50px 0;
-}
-.widget {
-    color: #777;
-    text-shadow: 0 1px #fff;
-    background: #ddd;
-    -webkit-box-shadow: 0 -1px 4px #ccc inset;
-    box-shadow: 0 -1px 4px #ccc inset;
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 3px;
+.date {
+    display: inline-block;
+    width: 140px;
+    text-align: right;
+    margin-right: 30px;
+    color: rgb(153, 153, 153);
 }
