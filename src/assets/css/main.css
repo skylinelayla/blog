@@ -48,7 +48,7 @@ a:hover {
     flex: 0 0 auto;
 }
 
-.post {
+#post {
     margin-bottom: 10px;
 }
 .main {
@@ -67,12 +67,12 @@ a:hover {
     margin: 50px auto;
     padding: 0 10px;
 }
-.article-wrapper > h1 {
+#article-meta > h1 {
     margin-bottom: 10px;
     color: rgb(255, 0, 31);
     font: 500 18px "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
-.article-wrapper > p {
+#article-meta > p {
     margin-bottom: 20px;
     color: rgb(119, 119, 119);
 }
